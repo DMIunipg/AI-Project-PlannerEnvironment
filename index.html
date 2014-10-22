@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Ai-project-plannerenvironment : An environment to test a planner agent, created for a college course.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Ai-project-plannerenvironment</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/DMIunipg/AI-Project-PlannerEnvironment">View on GitHub</a>
+
+          <h1 id="project_title">Ai-project-plannerenvironment</h1>
+          <h2 id="project_tagline">An environment to test a planner agent, created for a college course.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/DMIunipg/AI-Project-PlannerEnvironment/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/DMIunipg/AI-Project-PlannerEnvironment/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="ai-project-plannerenvironment" class="anchor" href="#ai-project-plannerenvironment"><span class="octicon octicon-link"></span></a>AI-Project-PlannerEnvironment</h1>
+
+<p>An environment to test a planner agent, created for a college project and based on a problem from "Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig.</p>
+
+<h2>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<p>All you need is python. This module is tested on python 2.7.5 and 3.3.2.</p>
+
+<h2>
+<a name="run-the-application" class="anchor" href="#run-the-application"><span class="octicon octicon-link"></span></a>Run the application</h2>
+
+<p>You can create your Agent in the <em>agents_dir</em>, like MyAgent example. The name of the file must be the same
+of the class that you create. The class must <em>inherit from LogAgent</em> and you have to implement the
+method <em>solve</em>.</p>
+
+<p>You can put your configuration file in <em>cfg_dir</em>. These files must be with json extension and they must respect
+the sintax of the environment, like in the examples that you can see in this directory.</p>
+
+<p>To run the application simply execute the main.py file:</p>
+
+<div class="highlight highlight-bash"><pre>python main.py <span class="o">[</span>-c cfg_list<span class="o">]</span> <span class="o">[</span>-a agents_list<span class="o">]</span>
+</pre></div>
+
+<p><strong>NOTE</strong>:</p>
+
+<ul>
+<li>cfg_list is a list of configuration files names.</li>
+<li>agents_list is a list of agents names.<br>
+</li>
+</ul>
+
+<p><em>Example</em>: </p>
+
+<div class="highlight highlight-bash"><pre>python main.py -c testconfig_simple.json testconfig.json -a MyAgent
+</pre></div>
+
+<h2>
+<a name="generating-random-maps" class="anchor" href="#generating-random-maps"><span class="octicon octicon-link"></span></a>Generating random maps</h2>
+
+<p>This module comes with a handy random map generator. The sysntax to use it is as follows:</p>
+
+<div class="highlight highlight-bash"><pre>python cfg_generator.py config_file_name num_airports num_airplanes num_boxes min_num_of_goals
+</pre></div>
+
+<p>This command will create a <code>config_file_name.json</code> file under <code>\cfg_dir</code>. There is no need to 
+add .json at the end of the file name.</p>
+
+<p>Please note that <code>cfg_generator.py</code> will always overwrite files with the same name you enter.</p>
+
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>Contributions are welcome, so please feel free to fix bugs, improve things, provide documentation. 
+For anything submit a personal message or fork the project to make a pull request and so on... thanks!</p>
+
+<h2>
+<a name="notes" class="anchor" href="#notes"><span class="octicon octicon-link"></span></a>Notes</h2>
+
+<p>This library is under heavily development, so there may be substantial changes in the near future.  </p>
+
+<p>You can find an example of utilization of the module in this repo. Detailed instruction will be written soon.</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><a href="https://raw.githubusercontent.com/DMIunipg/AI-Project-PlannerEnvironment/master/LICENSE">The MIT License (MIT)</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Ai-project-plannerenvironment maintained by <a href="https://github.com/DMIunipg">DMIunipg</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
